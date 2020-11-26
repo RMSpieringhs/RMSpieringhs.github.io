@@ -10,18 +10,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <style class="cssdeck">
 .darkgray {
-  background-color: gray; //gray is darker than darkgray
+  background-color: gray;
 }
+
 .gray {
   background-color: darkgray;
 }
+
 .lightgray {
   background-color: lightgray;
 }
-
-//Circle sizes
-$diameter-large: 240px;
-$diameter-small: $diameter-large / 3;
 
 body {
   display: grid;
@@ -37,58 +35,48 @@ h1 {
 
 .container {
   display: flex;
-
-  span {
-    font-size: 1.5rem;
-    align-self: end;
-    margin: 1rem auto;
-  }
-
-  &:hover {
-    .rect {
-      transform: translateX(0);
-    }
-  }
+}
+.container span {
+  font-size: 1.5rem;
+  align-self: end;
+  margin: 1rem auto;
+}
+.container:hover .rect {
+  transform: translateX(0);
 }
 
 .rect {
   display: flex;
-  // justify-content: center;
   align-items: center;
   position: relative;
   height: 400px;
   width: 250px;
   transition: transform 0.6s cubic-bezier(0.7, 0, 0.84, 0);
-
-  &.left {
-    transform: translateX(-50px);
-
-    .half-circle {
-      border-bottom-left-radius: $diameter-large / 2;
-      border-top-left-radius: $diameter-large / 2;
-      right: 0;
-    }
-  }
-
-  &.right {
-    transform: translateX(50px);
-
-    .half-circle {
-      border-bottom-right-radius: $diameter-large / 2;
-      border-top-right-radius: $diameter-large / 2;
-    }
-  }
+}
+.rect.left {
+  transform: translateX(-50px);
+}
+.rect.left .half-circle {
+  border-bottom-left-radius: 120px;
+  border-top-left-radius: 120px;
+  right: 0;
+}
+.rect.right {
+  transform: translateX(50px);
+}
+.rect.right .half-circle {
+  border-bottom-right-radius: 120px;
+  border-top-right-radius: 120px;
 }
 
 .half-circle {
   position: absolute;
-  height: $diameter-large;
-  width: $diameter-large / 2;
-
-  &.inner {
-    height: $diameter-small;
-    width: $diameter-small / 2;
-  }
+  height: 240px;
+  width: 120px;
+}
+.half-circle.inner {
+  height: 80px;
+  width: 40px;
 }
 </style>
 <script>
