@@ -1,0 +1,222 @@
+<html lang="en"><head>
+
+<meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style>
+.wrap {
+  margin: 0 auto;
+  width: 450px;
+  height: 300px;
+}
+@media (max-height: 600px) {
+  .wrap {
+    width: 825px;
+  }
+}
+.box {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  background-position: -75px -75px;
+  background-image: linear-gradient(45deg, #b2b2b2 25%, transparent 25%, transparent 75%, #b2b2b2 75%, #b2b2b2), linear-gradient(-45deg, #b2b2b2 25%, transparent 25%, transparent 75%, #b2b2b2 75%, #b2b2b2);
+  background-size: 150px 150px;
+}
+@media (max-height: 600px) {
+  .box {
+    float: left;
+  }
+}
+.c {
+  position: absolute;
+  border-width: 37.5px;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+  transition: transform 2s linear, -webkit-transform 2s linear;
+  will-cange: transform;
+}
+#controller-rotate:checked ~ .wrap .c,
+.box:hover .c {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+#controller-hide:checked ~ .wrap .c {
+  display: none;
+}
+.c-u {
+  border-color: #666 #999 #bbb;
+}
+.c-d {
+  border-color: #bbb #999 #666;
+}
+.c-l {
+  border-color: #999 #bbb #999 #666;
+}
+.c-r {
+  border-color: #999 #666 #999 #bbb;
+}
+.c1 {
+  top: 37.5px;
+  left: 112.5px;
+}
+.c2 {
+  top: 37.5px;
+  left: 262.5px;
+}
+.c3 {
+  top: 112.5px;
+  left: 37.5px;
+}
+.c4 {
+  top: 112.5px;
+  left: 187.5px;
+}
+.c5 {
+  top: 112.5px;
+  left: 337.5px;
+}
+.c6 {
+  top: 187.5px;
+  left: 112.5px;
+}
+.c7 {
+  top: 187.5px;
+  left: 262.5px;
+}
+.intro {
+  text-align: center;
+}
+@media (max-height: 600px) {
+  .intro {
+    float: right;
+    width: 375px;
+  }
+}
+#controller-hide,
+#controller-rotate {
+  opacity: 0;
+}
+.controller-label--hide,
+.controller-label--rotate {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+.controller-label--hide::before,
+.controller-label--rotate::before {
+  content: '☐';
+}
+input:checked + .controller-label--hide::before,
+input:checked + .controller-label--rotate::before {
+  content: '☑';
+}
+.controller-label--hide {
+  top: 0;
+}
+.controller-label--rotate {
+  top: 1.2em;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #d8d8d8;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-family: serif;
+}
+kbd {
+  padding: 1px 5px;
+  border: 1px dashed #999;
+  background-color: rgba(255,255,255,0.5);
+}
+h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #999;
+}
+#info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3px 5px;
+  font-style: italic;
+  font-family: serif;
+  text-align: right;
+  color: #999;
+}
+#info a {
+  color: inherit;
+}
+</style>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <input type="checkbox" name="controller-hide" id="controller-hide">
+<label class="controller-label--hide" for="controller-hide">hide cycles</label>
+
+<input type="checkbox" name="controller-rotate" id="controller-rotate">
+<label class="controller-label--rotate" for="controller-rotate">rotate cycles</label>
+
+<section class="wrap">
+  <header class="intro">
+    <h2>Haze Illusion</h2>
+
+    <p>
+      at first, the <strong>left</strong> region looks hazy;
+      <br>
+      after <kbd>{hover it}</kbd> and rotate those cycles,
+      <br>
+      the <strong>right</strong> region looks hazy.
+    </p>
+  </header>
+
+  <div class="box">
+    <div class="c c1 c-u"></div>
+    <div class="c c2 c-d"></div>
+    <div class="c c3 c-l"></div>
+    <div class="c c4 c-r"></div>
+    <div class="c c5 c-l"></div>
+    <div class="c c6 c-d"></div>
+    <div class="c c7 c-u"></div>
+  </div>
+</section>
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js"></script>
+
+
+
+ 
+</body></html>
