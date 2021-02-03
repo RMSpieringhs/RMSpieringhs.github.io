@@ -384,6 +384,25 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
 		<div class="row">
 		<h2> </h2>
 		</div>
+		<div id='vrview'></div>
+		
+		<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+		<script>
+			window.addEventListener('load', onVrViewLoad);
+
+			function onVrViewLoad() {
+				var vrView = new VRView.Player('#vrview', {
+					image: 'VR_image_probeam_test_1.png',
+					is_stereo: true
+				});
+			}
+		</script>
+		<div class="row">
+		<h2> </h2>
+		</div>
+		<div class="row">
+		<h2> </h2>
+		</div>
 		<div class="row">
 	        <div class="col">
 			</div>
