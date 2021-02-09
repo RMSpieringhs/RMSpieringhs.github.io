@@ -385,7 +385,20 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
 		<h2> </h2>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<div id='vrview'></div>
+			<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+			<script>
+				window.addEventListener('load', onVrViewLoad);
+
+				function onVrViewLoad() {
+					var vrView = new VRView.Player('#vrview', {
+						image: 'VR_image_probeam_test_3.png',
+						is_stereo: true,
+						is_yaw_only: true
+					});
+				}
+			</script>
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 			<div id='vrview'></div>
@@ -395,15 +408,13 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
 
 				function onVrViewLoad() {
 					var vrView = new VRView.Player('#vrview', {
-						image: 'VR_image_probeam_test_1.png',
+						image: 'VR_image_probeam_test_4.png',
 						is_stereo: true,
 						is_yaw_only: true
 					});
 				}
 			</script>
 			</div>
-			<div class="col">
-			</div>		
 		</div>
 		<div class="row">
 		<h2> </h2>
