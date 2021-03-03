@@ -1,0 +1,4 @@
+VR image			->	old3
+VR image _2 (bike at 50m) 	->	old4
+VR image _3 (bike at 30m)	-> 	old5
+VR image _4 (d) 		-> 	old6
