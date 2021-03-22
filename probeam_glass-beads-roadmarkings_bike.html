@@ -1,0 +1,19 @@
+<html lang="en" style="overflow: hidden;">
+
+
+    <body>
+    			<div id='vrview'></div>
+			<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+			<script>
+				window.addEventListener('load', onVrViewLoad);
+
+				function onVrViewLoad() {
+					var vrView = new VRView.Player('#vrview', {
+						image: 'VR_image_probeam_test_3_10.png',
+						is_stereo: true,
+						is_yaw_only: true
+					});
+				}
+			</script>
+
+</body></html>
