@@ -100,10 +100,16 @@
                   <h2 id="the-importance-of-photorealism">The importance of photorealism</h2>
                   <p>Virtual Reality (VR) has revolutionized the way we showcase products, buildings, and lighting installations to customers. With its immersive environment, users can experience a computer-generated reality that feels and looks real. However, while virtual renderings can provide useful information, they often fail to capture the <a href="https://www.adobe.com/products/substance3d/discover/pbr.html">physical realism</a> of the environment accurately. This is due to the limited number of reflection and light emission properties that most 3D computer graphics software packages use, which reduces computation time. As a result, physical-based rendering is crucial in creating luminance images that accurately reflect reality, particularly in the context of evaluating indoor and outdoor lighting installations.</p>
                   <h2 id="device-dependent-color-space">Device dependent color space</h2>
-                  <p>One of the biggest challenges in achieving physical realism is the <a href="https://aldertech.com/color-101-color-spaces/">device-dependent color space</a> that virtual renderings are typically processed in, leading to differences in perception on different computer screens or devices. While calibrating or characterizing each screen is a solution, it requires expensive equipment and a conversion between device-dependent and device-independent color spaces. A more practical approach is to create virtual renderings in a device-independent color space, which can be achieved through a physical renderer like Mitsuba. </p>
-                  <h2 id="physical-based-renderer-mitsuba">Physical based renderer Mitsuba</h2>
+				  <p>One of the biggest challenges in achieving physical realism is the <a href="https://aldertech.com/color-101-color-spaces/">device-dependent color space</a> that virtual renderings are typically processed in, leading to differences in perception on different computer screens or devices. While calibrating or characterizing each screen is a solution, it requires expensive equipment and a conversion between device-dependent and device-independent color spaces. A more practical approach is to create virtual renderings in a device-independent color space, which can be achieved through a physical renderer like Mitsuba. </p>
+                  <a href="https://rgl.epfl.ch/publications/NimierDavidVicini2019Mitsuba2">
+                  <img class="img-responsive" src="img/post-sample-image-29.png" alt="">
+                  </a>
+				  <h2 id="physical-based-renderer-mitsuba">Physical based renderer Mitsuba</h2>
                   <p>Mitsuba is a well-known physical renderer that can efficiently create renderings in a device-independent color space with acceptable computer computation costs. Its input includes information about the light intensity distributions (LID) for each fixture, reflection characteristics for each object expressed by bidirectional reflectance distribution function (BRDF), and the camera/render characteristics, resulting in a virtual rendering that accurately reflects reality.</p>
-                  <h2 id="advantages-of-physical-based-rendering">Advantages of Physical Based Rendering</h2>
+                  <a href="#">
+                  <img class="img-responsive" src="img/post-sample-image-30.png" alt="">
+                  </a>                  
+				  <h2 id="advantages-of-physical-based-rendering">Advantages of Physical Based Rendering</h2>
                   <p>PBR has several advantages over traditional rendering techniques. Some of these advantages include:</p>
                   <h3 id="consistency-">Consistency:</h3>
                   <p>PBR ensures consistency in the look and feel of objects and materials, regardless of the lighting conditions.</p>
