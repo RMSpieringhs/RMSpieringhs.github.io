@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDHMDSSPF2"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-EDHMDSSPF2');
+      </script>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Physical Based Rendering (PBR)</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/clean-blog.min.css" rel="stylesheet">
+      <!-- Custom Fonts -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html">ir. MSc. Rik Marco Spieringhs</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li>
+                     <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                     <a href="about.html">About</a>
+                  </li>
+                  <li>
+                     <a href="https://rikspieringhs.nl/portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                     <a href="contact.html">Contact</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
+      </nav>
+      <!-- Page Header -->
+      <!-- Set your background image for this header on the line below. -->
+      <header class="intro-header" style="background-image: url('img/post-bg.png')">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="post-heading">
+                     <h1>Physical Based Rendering (PBR)</h1>
+                     <h2 class="subheading">Physically based rendering (PBR) is a computer graphics approach that seeks to render images in a way that models the flow of light in the real world</h2>
+                     <span class="meta">Posted by <a href="#">Rik Spieringhs</a> on April 4, 2023</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Post Content -->
+      <article>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <h1 id="physical-based-rendering">Physical Based Rendering</h1>
+                  <p><a href="https://en.wikipedia.org/wiki/Physically_based_rendering">Physical based rendering (PBR)</a> is a rendering technique that simulates the physical behavior of light to create realistic and accurate images. It is widely used in 3D graphics and gaming industries to create high-quality images that closely resemble real-life objects and environments.</p>
+                  <h2 id="understanding-physical-based-rendering">Understanding Physical Based Rendering</h2>
+                  <p>PBR is based on the laws of physics that govern the behavior of light. It takes into account factors such as light source, surface reflectance, and material properties to create accurate and realistic images. This is achieved by using a combination of techniques such as ray tracing, global illumination, and BRDF (bidirectional reflectance distribution function).</p>
+                  <h3 id="what-is-ray-tracing-">What is Ray Tracing?</h3>
+                  <p><a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)">Ray tracing</a> is a technique used to simulate the behavior of light by tracing the path of rays from the light source to the camera. This technique calculates the interactions between light and surfaces to create realistic shadows, reflections, and refractions.</p>
+                  <h3 id="what-is-global-illumination-">What is Global Illumination?</h3>
+                  <p><a href="https://en.wikipedia.org/wiki/Global_illumination#:~:text=Global%20illumination%20(GI)%2C%20or,realistic%20lighting%20to%203D%20scenes.">Global illumination</a> is a technique used to simulate the indirect light that bounces off surfaces and illuminates other parts of the scene. This technique takes into account the reflective and refractive properties of surfaces to create accurate and realistic lighting.</p>
+                  <h3 id="what-is-brdf-">What is BRDF?</h3>
+                  <p><a href="https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function">Bidirectional reflectance distribution function (BRDF)</a> is a mathematical function that describes how light is reflected from a surface. It takes into account the angle of incidence and the surface properties to calculate the amount of light that is reflected in a specific direction.</p>
+                  <h2 id="history-of-physical-based-rendering">History of Physical Based Rendering</h2>
+                  <p>The concept of physically based rendering originated in the late 1970s and early 1980s. The initial research focused on modeling and simulating the behavior of light and materials, which were based on the laws of physics. However, the development of physically based rendering techniques didn&#39;t gain traction until the mid-1990s with the introduction of radiosity and ray tracing algorithms.</p>
+                  <h2 id="the-importance-of-photorealism">The importance of photorealism</h2>
+                  <p>Virtual Reality (VR) has revolutionized the way we showcase products, buildings, and lighting installations to customers. With its immersive environment, users can experience a computer-generated reality that feels and looks real. However, while virtual renderings can provide useful information, they often fail to capture the <a href="https://www.adobe.com/products/substance3d/discover/pbr.html">physical realism</a> of the environment accurately. This is due to the limited number of reflection and light emission properties that most 3D computer graphics software packages use, which reduces computation time. As a result, physical-based rendering is crucial in creating luminance images that accurately reflect reality, particularly in the context of evaluating indoor and outdoor lighting installations.</p>
+                  <h2 id="device-dependent-color-space">Device dependent color space</h2>
+                  <p>One of the biggest challenges in achieving physical realism is the <a href="https://aldertech.com/color-101-color-spaces/">device-dependent color space</a> that virtual renderings are typically processed in, leading to differences in perception on different computer screens or devices. While calibrating or characterizing each screen is a solution, it requires expensive equipment and a conversion between device-dependent and device-independent color spaces. A more practical approach is to create virtual renderings in a device-independent color space, which can be achieved through a physical renderer like Mitsuba. </p>
+                  <h2 id="physical-based-renderer-mitsuba">Physical based renderer Mitsuba</h2>
+                  <p>Mitsuba is a well-known physical renderer that can efficiently create renderings in a device-independent color space with acceptable computer computation costs. Its input includes information about the light intensity distributions (LID) for each fixture, reflection characteristics for each object expressed by bidirectional reflectance distribution function (BRDF), and the camera/render characteristics, resulting in a virtual rendering that accurately reflects reality.</p>
+                  <h2 id="advantages-of-physical-based-rendering">Advantages of Physical Based Rendering</h2>
+                  <p>PBR has several advantages over traditional rendering techniques. Some of these advantages include:</p>
+                  <h3 id="consistency-">Consistency:</h3>
+                  <p>PBR ensures consistency in the look and feel of objects and materials, regardless of the lighting conditions.</p>
+                  <h3 id="flexibility">Flexibility</h3>
+                  <p>PBR provides more flexibility and control over the look and feel of objects and materials, allowing for better customization.</p>
+                  <h3 id="efficiency">Efficiency</h3>
+                  <p>PBR reduces the need for additional post-processing and compositing, saving time and resources.</p>
+                  <h3 id="realism">Realism</h3>
+                  <p>PBR simulates the physical behavior of light, which results in more accurate and realistic lighting. This makes it ideal for creating realistic environments, objects, and characters.</p>
+                  <h2 id="applications-of-physical-based-rendering">Applications of Physical Based Rendering</h2>
+                  <p>PBR is used in a variety of applications such as:</p>
+                  <h3 id="gaming">Gaming</h3>
+                  <p>PBR is widely used in the gaming industry to create realistic and immersive environments, objects, and characters. It is used in both AAA and indie games to create high-quality graphics that push the boundaries of what is possible.</p>
+                  <h3 id="architecture-and-design">Architecture and Design</h3>
+                  <p>PBR is used in architecture and design to create realistic visualizations of buildings, interiors, and products. This helps architects and designers to visualize their designs in a realistic and accurate way.</p>
+                  <h3 id="film-and-animation">Film and Animation</h3>
+                  <p>PBR is used in film and animation to create realistic and believable characters, environments, and special effects. It is used in both 2D and 3D animation to create high-quality visuals that are on par with live-action films.</p>
+                  <h2 id="conclusion">Conclusion</h2>
+                  <p>In conclusion, while virtual reality is perfect for showcasing products, buildings, and lighting installations, pursuing physical realism is essential in accurately representing the environment. Physical-based rendering, particularly through a physical renderer like Mitsuba, offers a practical solution for creating luminance images that are device-independent and accurately reflect reality. By adopting physical-based rendering, designers and architects can create virtual renderings that are both visually appealing and physically accurate, making them an essential tool in the design process.</p>
+                  <p>Physical based rendering is a powerful rendering technique that simulates the physical behavior of light to create realistic and accurate images. It has several advantages over traditional rendering techniques, including realistic lighting, consistent look, and better photorealism. PBR is used in a variety of applications such as gaming, architecture and design, and film and animation, and is an essential tool for artists and designers who want to create high-quality visuals.</p>
+                  <h2 id="faqs">FAQs</h2>
+                  <ol>
+                     <li>What applications support PBR rendering?</li>
+                     <p>•    Many 3D modeling and rendering applications support PBR rendering, including Blender, Unity, and Unreal Engine.</p>
+                     <li>How does PBR differ from traditional rendering techniques?</li>
+                     <p>•    PBR tries to simulate light as it behaves in the real world, while traditional rendering techniques often use shortcuts and approximations.</p>
+                     <li>Can PBR be used for real-time rendering?</li>
+                     <p>•    Yes, PBR can be used for real-time rendering in applications like video games and virtual reality experiences.</p>
+                     <li>Are there any downsides to using PBR?</li>
+                     <p>•    PBR can be more computationally intensive than traditional rendering techniques, which can make it slower to render complex scenes.</p>
+                     <li>Can I use PBR to create realistic animations?</li>
+                     <p>•    Yes, PBR can be used to create realistic animations, but it may require more effort and skill to create animations that look realistic in motion.</p>
+                  </ol>
+                  <p><i>This text was written with help of ChatGPT and the figures were generated using Midjourney.</i></p>
+                  <p><i>If you're interested in learning more about this research, feel free to reach out!</i></p>
+                  <a href="https://www.linkedin.com/in/rikmarcospieringhs/"><i>Rik Spieringhs</i></a>
+                  <!--           <a href="#">
+                     <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
+                     </a>
+                     <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>-->
+               </div>
+            </div>
+         </div>
+      </article>
+      <hr>
+      <!-- Footer -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                     <li>
+                        <a href="https://www.linkedin.com/in/rikmarcospieringhs/">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.linkedin.com/in/rikmarcospieringhs/">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="v">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                     </li>
+                  </ul>
+                  <p class="copyright text-muted">R.M. Spieringhs Website Design 2023</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Custom Theme JavaScript -->
+      <script src="js/clean-blog.min.js"></script>
+   </body>
+</html>
