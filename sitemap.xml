@@ -23,7 +23,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rikspieringhs.nl/portfolio/</loc>
+  <loc>https://rikspieringhs.nl/blog/</loc>
   <lastmod>2023-03-31T11:29:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -82,21 +82,4 @@
   <lastmod>2023-03-31T11:29:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://rikspieringhs.nl/portfolio/Temporal%20Contrast%20Sensitivity%20RMSpieringhs.pdf</loc>
-  <lastmod>2023-03-31T11:29:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rikspieringhs.nl/portfolio/Display%20Characterization%20RMSpieringhs.pdf</loc>
-  <lastmod>2023-03-31T11:29:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rikspieringhs.nl/portfolio/Chromatic%20Discrimination%20RMSpieringhs.pdf</loc>
-  <lastmod>2023-03-31T11:29:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
